@@ -58,7 +58,7 @@ with st.form("add_data_form", clear_on_submit=True):
     col2 = st.number_input("數量", min_value=0, value=1, key="add_qty")
 
     submitted = st.form_submit_button("寫入 Google Sheet")
- if submitted:
+    if submitted:
         if col1.strip() == "":
             st.warning("請填寫姓名！")
         else:
