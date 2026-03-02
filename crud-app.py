@@ -99,7 +99,7 @@ if data:
                 if new_name.strip() == "":
                     st.warning("請填寫姓名！")
                 else:
-with st.spinner("正在更新資料中..."):
+    with st.spinner("正在更新資料中..."):
                         # 分別更新 A 欄(第一欄) 與 B 欄(第二欄)
                         worksheet.update_cell(selected_row_update, 1, new_name)
                         worksheet.update_cell(selected_row_update, 2, new_qty)
